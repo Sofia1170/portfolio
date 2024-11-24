@@ -1,99 +1,15 @@
-
- <style>
-     body {
-     background-color: black;
-     }
-     .low {
-     color: black;
-     margin-bottom: 0px;
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
-     box-sizing: border-box;
-     color: white;
-     font-size: 70px;
-     font-weight: 800;
-     letter-spacing: .10em;
-     line-height: 55px;
-     margin: 0;
-     text-transform: lowercase;
-     padding-right: 3rem;
-     width: 55%;
-     margin-left: 0px;
-     opacity: .7;
-     }
-     .gow {
-     color: #9b67df;
-     font-family: Cyborg;
-     font-size: 7rem;
-     text-shadow: 3px 3px 0 #1f2127, -1px -1px 0 #1f2127, 1px -1px 0 #1f2127, -1px 1px 0 #1f2127, 1px 1px 0 #1f2127;
-     margin-right: 100px;
-     margin-top: 5px;
-     margin-bottom: 0px;
-     }
-     .we {
-     margin-left: 80px;
-     margin-right: 0px;
-     display: flex;
-     flex-direction: row;
-     margin-top: 50px;
-
-     }
-     .text {
-     display: flex;
-     flex-direction: column;
-
-
-     }
-     .git {
-     margin-left: 30px;
-     width: 80px;
-     height: 80px;
-     margin-top: 5px;
-     }
-     .heading {
-     display: flex;
-     align-items: center;
-
-      }
-      .discount {
-      margin-left: 100px;
-      font-size: 20px;
-      text-decoration: none;
-      color: #DDA0DD;
-     }
-     a:hover {
-     color: white;
-     }
-.cursor {
-    position: fixed;
-    height: 50px;
-    width: 50px;
-    border: 4px solid var(--theme-color);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    transition: width 0.2s, height 0.2s;
-    box-shadow: 10px 10px 50px var(--theme-color);
-
-}
-
-      .navigation {
-       margin-left: 1100px;
-     }
-
-     img {
-     max-width: 500px;
-     max-height: 500px;
-     margin-left: 0px;
-     color: white;
-     margin-right: 100px;
-     }
-
-
-
-
- </style>
- <div class="heading">
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}"/>
+<section class="main" id="main">
+    <div class="video-background">
+    <video autoplay muted loop id="myVideo">
+        <source src="https://static.videezy.com/system/resources/previews/000/045/520/original/200323-AbLightLeakBlue02.mp4" type="video/mp4">
+    </video>
+</div>
+<div class="content">
+    <!-- Контент страницы -->
+</div>
+<div class="heading">
  <a
          href="https://github.com/Sofia1170/portfolio"><img width="64" height="64" class="git" src="https://img.icons8.com/nolan/64/github.png" alt="github"/>
  </a>
@@ -117,6 +33,6 @@
      </div>
 
      </div>
-
+</section>
 
 <div class="cursor" style="left: 1364px; top: 328px;"></div>
